@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+html,
+body {
+    /* height: 100%; */
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "MessinaSansWeb", sans-serif;
+    background-color: black;
+    z-index: -5;
+}
+.disc-gall-header {
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+}
+
+.disc-gall-header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 3rem;
+    background: transparent;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+.disc-gall-header-nav-links {
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+    @media screen and (max-width: 768px){
+        display: none;
+    }
+}
+#responsiveLink{
+    font-size: 2rem;
+}
+.disc-gall-header-nav-menu-option{
+    width: 3%;
+    text-align: center;
+    border:  2px solid white;
+    @media screen and (max-width: 768px){
+        width: 15%;
+    }
+}
+
+.disc-gall-header-nav-links div {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.disc-gall-header-nav-span {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.disc-gall-header-nav-links div:hover span {
+    width: 100%;
+}
+/* header end */
+
+
+.gallery-main {
+    background-color: #111;
+    margin-top: 100px;
+}
+
+/* ! Middle gallery section's css begins*/
+.gallery-main-article-div {
+    padding: 6rem 1rem 6rem;
+    position: relative;
+    /* z-index: 5; */
+}
+
+.galleries-items-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: 16px; */
+ @media only screen  and (max-width: 300px) and (min-width: 600px){
+   /* width: 112%; */
+   gap: 12px;
+ }
+}
+
+.galleries-items {
+    /* display: block; */
+    width: 24.33%;
+    padding-bottom: 50px;
+
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+        width: 45%;
+    }
+
+}
+
+.galleries-items a {
+    text-decoration: none;
+}
+
+.galleries-items-figure {
+    /* overflow: hidden; */
+    /* padding-top: 65%; */
+    position: relative;
+}
+
+.galleries-items-figure img {
+    
+    width: 100%;
+
+
+}
+
+.galleries-items-tile {
+    color: #fff;
+    /* font-family: messina-sans; */
+    font-size: .85rem;
+    line-height: 1.1;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.galleries-items-para {
+    color: #777;
+    line-height: 1.3;
+    margin-top: .25rem;
+    font-size: .9rem;
+
+}
+
+/* ! Middle gallery section's css ends*/
+
+/* footer */
+.disc-gall-footer {
+    margin-top: 3rem;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    flex-wrap: wrap;
+    padding: 3rem 2rem;
+}
+
+.disc-gall-footer-container {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 4rem 2rem;
+}
+
+.disc-gall-footer-sub-container {
+    width: 33.33%;
+}
+
+/* Links & Contact */
+.disc-gall-footer-sub-container-links {
+    display: flex;
+}
+
+.disc-gall-footer-sub-container-links div {
+    width: 50%;
+}
+
+.disc-gall-footer-sub-container-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.disc-gall-footer-sub-container-contact-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.disc-gall-footer-sub-container-contact-text p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(198, 195, 195);
+}
+
+.disc-gall-footer-sub-container-contact-text h3 {
+    font-weight: 400;
+}
+
+.disc-gall-footer-sub-container-links-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 19.2px;
+}
+
+.disc-gall-footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.disc-gall-footer-bottom h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: rgb(176, 176, 176);
+}
+
+footer {
+    position: relative;
+    bottom: 100px;
+    z-index: -1;
+    background-color: black;
+    padding: 60px 20px;
+}
+
+/* 📌 Mobile Responsive Styles */
+@media (max-width: 1024px) {
+    .disc-gall-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 3rem;
+    }
+
+    .disc-gall-footer-sub-container {
+        width: 100%;
+    }
+
+    .disc-gall-footer-sub-container-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .disc-gall-footer-container {
+        gap: 3rem;
+        padding: 3rem 1.5rem;
+    }
+
+    .disc-gall-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    /* ✅ Change Order: Contact First */
+    .disc-gall-footer-sub-container-contact {
+        order: 1;
+    }
+
+    /* ✅ Change Order: About, Our Worlds, Experiences, Gallery */
+    .disc-gall-footer-sub-container-links-text:first-child {
+        order: 2;
+    }
+
+    /* ✅ Change Order: Foundation, Careers, Company, Contact, Privacy */
+    .disc-gall-footer-sub-container-links-text:last-child {
+        order: 3;
+    }
+
+    .disc-gall-footer-bottom {
+        flex-direction: column;
+        text-align: left;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .disc-gall-footer {
+        padding: 2rem 1rem;
+    }
+
+    .disc-gall-footer-container {
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .disc-gall-footer-sub-container-contact-text h3 {
+        font-size: 1rem;
+    }
+
+    .disc-gall-footer-bottom h3 {
+        font-size: 1rem;
+    }
+}

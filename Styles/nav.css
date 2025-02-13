@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  .main-div{
+    display: block;
+  }
+  
+  .main-first{
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 3%;
+  }
+  .main-first img{
+    margin: 2%;
+  }
+  main-first ul{
+    list-style: none;
+    color: white;
+    width: 99%;
+    align-items: center;
+  }
+  ul a{
+    text-decoration: none;
+  }
+  li{
+    margin-top: 1.2rem;
+    font-size: 1.5rem;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+  }
